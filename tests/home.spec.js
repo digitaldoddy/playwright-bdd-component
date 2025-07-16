@@ -1,12 +1,8 @@
 import { test as testBase, expect } from '@playwright/test';
 import { http } from 'msw';
-import { createNetworkFixture, type NetworkFixture } from '@msw/playwright'
+import { createNetworkFixture } from '@msw/playwright'
 
-interface Fixtures {
-  network: NetworkFixture
-}
-
-const test = testBase.extend<Fixtures>({
+const test = testBase.extend({
   network: createNetworkFixture({
     initialHandlers: [
       http.get('/resource', () => {
