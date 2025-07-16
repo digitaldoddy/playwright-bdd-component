@@ -16,7 +16,7 @@ const test = testBase.extend<Fixtures>({
   }),
 })
 
-testBase('homepage has greeting', async ({ page }) => {
+test('homepage has greeting', async ({ page }) => {
   await page.goto('/');
   const data = await page.evaluate(() => {
     return fetch('/resource').then((response) => {
