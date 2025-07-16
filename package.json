@@ -1,0 +1,25 @@
+{
+  "name": "msw-playwright-cjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@msw/playwright": "^0.4.2",
+    "@playwright/test": "^1.54.1",
+    "@vitejs/plugin-react": "^4.6.0",
+    "msw": "^2.10.4",
+    "playwright": "^1.54.1",
+    "vite": "^6.3.5"
+  }
+}
