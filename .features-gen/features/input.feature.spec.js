@@ -1,5 +1,5 @@
 // Generated from: features/input.feature
-import { test } from "../../features/fixtures.ts";
+import { test } from "../../features/fixtures.js";
 
 test.describe('input component', () => {
 

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "test": "npx playwright test",
-    "test-ct": "npx bddgen -c playwright-ct.config.ts && playwright test -c playwright-ct.config.ts"
+    "test-ct": "npx bddgen -c playwright-ct.config.js && playwright test -c playwright-ct.config.js"
   },
   "keywords": [],
   "author": "",
