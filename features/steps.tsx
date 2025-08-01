@@ -1,8 +1,8 @@
+import TextArea from "../src/components/TextArea";
 import { Given, Then, When, expect } from "./fixtures";
 
-
 Given('Mounted input component', async ({ mount }) => {
-  await mount(<textarea data-testid="textField" />);
+  await mount(<TextArea />);
 });
 
 When('I type {string}', async ({ page }, arg: string) => {
